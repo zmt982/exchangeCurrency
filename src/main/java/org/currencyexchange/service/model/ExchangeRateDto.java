@@ -68,7 +68,7 @@ public class ExchangeRateDto {
 
     @Override
     public String toString() {
-        return "ExchangeRateDto{" +
+        return "{" +
                 "id=" + id +
                 ", baseCurrencyId=" + baseCurrencyId +
                 ", targetCurrencyId=" + targetCurrencyId +

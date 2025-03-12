@@ -1,6 +1,7 @@
 package org.currencyexchange.service.impl;
 
 import org.currencyexchange.database.entity.Currency;
+import org.currencyexchange.database.repository.CurrencyDao;
 import org.currencyexchange.database.repository.impl.CurrencyDaoImpl;
 import org.currencyexchange.service.CurrencyService;
 import org.currencyexchange.service.mapper.CurrencyMapper;
@@ -10,10 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 public class CurrencyServiceImpl implements CurrencyService {
-    private final CurrencyDaoImpl currencyDao;
+    private final CurrencyDao currencyDao;
     private final CurrencyMapper currencyMapper;
 
-    public CurrencyServiceImpl(CurrencyDaoImpl currencyDao, CurrencyMapper currencyMapper) {
+    public CurrencyServiceImpl(CurrencyDao currencyDao, CurrencyMapper currencyMapper) {
         this.currencyDao = currencyDao;
         this.currencyMapper = currencyMapper;
     }
@@ -30,24 +31,21 @@ public class CurrencyServiceImpl implements CurrencyService {
         return currencyMapper.toDto(currency);
     }
 
-    public CurrencyDto add(CurrencyDto addDto) {
-        Currency currencyToAdd = currencyMapper.toCurrency(addDto);
+    public CurrencyDto add(String name, String code, String sign) {
+        Currency currencyToAdd = new Currency();
+        currencyToAdd.setCode(code.toUpperCase());
+        currencyToAdd.setFullName(name);
+        currencyToAdd.setSign(sign);
         Optional<Currency> optionalCurrency = currencyDao.save(currencyToAdd);
         currencyToAdd = optionalCurrency.orElseThrow(() -> new RuntimeException("No currency added"));
         return currencyMapper.toDto(currencyToAdd);
     }
 
     public static void main(String[] args) {
-        CurrencyDaoImpl dao = new CurrencyDaoImpl();
+        CurrencyDao dao = new CurrencyDaoImpl();
         CurrencyMapper mapper = new CurrencyMapper();
         CurrencyServiceImpl service = new CurrencyServiceImpl(dao, mapper);
 
-//        CurrencyDto dto = new CurrencyDto();
-//        dto.setCode("EUR");
-//        dto.setFullName("Euro");
-//        dto.setSign("ˆ");
-//
-//        service.add(dto);
         List<CurrencyDto> list = service.getAllCurrencies();
         System.out.println(service.getCurrencyByCode("eUr"));
         System.out.println(list);

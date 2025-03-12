@@ -9,5 +9,5 @@ public interface CurrencyService {
 
     public CurrencyDto getCurrencyByCode(String code);
 
-    public CurrencyDto add(CurrencyDto currencyDto);
+    public CurrencyDto add(String name, String code, String sign);
 }

@@ -2,7 +2,7 @@ package org.currencyexchange.database.repository.impl;
 
 import org.currencyexchange.database.entity.Currency;
 import org.currencyexchange.database.repository.CurrencyDao;
-import org.currencyexchange.database.repository.DataBaseUtils;
+import org.currencyexchange.util.DataBaseUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class CurrencyDaoImpl implements CurrencyDao {
         String sql = "SELECT * FROM currencies WHERE code = ?";
 
         try (Connection conn = DataBaseUtils.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, code);
+            stmt.setString(1, code.toUpperCase());
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     currency = new Currency();

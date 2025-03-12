@@ -1,4 +1,4 @@
-package org.currencyexchange.database.repository;
+package org.currencyexchange.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

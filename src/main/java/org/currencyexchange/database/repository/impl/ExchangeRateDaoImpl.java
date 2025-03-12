@@ -1,7 +1,7 @@
 package org.currencyexchange.database.repository.impl;
 
 import org.currencyexchange.database.entity.ExchangeRate;
-import org.currencyexchange.database.repository.DataBaseUtils;
+import org.currencyexchange.util.DataBaseUtils;
 import org.currencyexchange.database.repository.ExchangeRateDao;
 
 import java.sql.*;

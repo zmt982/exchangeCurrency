@@ -10,7 +10,7 @@ public interface ExchangeRateService {
 
     public ExchangeRateDto getByCodePair(String pair);
 
-    public ExchangeRateDto add(ExchangeRateDto rateDto);
+    public ExchangeRateDto add(String baseCurrencyCode, String targetCurrencyCode, BigDecimal rate);
 
     public ExchangeRateDto updateByPair(String pair, BigDecimal rate);
 }

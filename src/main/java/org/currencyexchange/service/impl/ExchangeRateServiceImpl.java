@@ -1,8 +1,10 @@
 package org.currencyexchange.service.impl;
 
 import org.currencyexchange.database.entity.Currency;
+import org.currencyexchange.database.repository.CurrencyDao;
+import org.currencyexchange.database.repository.ExchangeRateDao;
 import org.currencyexchange.database.repository.impl.CurrencyDaoImpl;
-import org.currencyexchange.controller.CurrencyUtils;
+import org.currencyexchange.util.CurrencyUtils;
 import org.currencyexchange.database.entity.ExchangeRate;
 import org.currencyexchange.database.repository.impl.ExchangeRateDaoImpl;
 import org.currencyexchange.service.ExchangeRateService;
@@ -14,12 +16,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class ExchangeRateServiceImpl implements ExchangeRateService {
-    private final ExchangeRateDaoImpl rateDao;
-    private final CurrencyDaoImpl currencyDao;
+    private final ExchangeRateDao rateDao;
+    private final CurrencyDao currencyDao;
     private final ExchangeRateMapper rateMapper;
 
-    public ExchangeRateServiceImpl(ExchangeRateDaoImpl rateDao, CurrencyDaoImpl currencyDao,
-                                   ExchangeRateMapper rateMapper) {
+    public ExchangeRateServiceImpl(ExchangeRateDao rateDao, CurrencyDao currencyDao, ExchangeRateMapper rateMapper) {
         this.rateDao = rateDao;
         this.currencyDao = currencyDao;
         this.rateMapper = rateMapper;
@@ -32,23 +33,19 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
     }
 
     private ExchangeRate findByPair(String pair) {
-        List<String> codes = CurrencyUtils.splitCurrencyPair(pair.toUpperCase());
+        List<String> codes = CurrencyUtils.splitCurrencyPair(pair);
         String baseCurrencyCode = codes.get(0);
         String targetCurrencyCode = codes.get(1);
 
-        Optional<Currency> optionalBaseCurrency = currencyDao.findByCode(baseCurrencyCode);
-        Optional<Currency> optionalTargetCurrency = currencyDao.findByCode(targetCurrencyCode);
-
-        Currency baseCurrency = optionalBaseCurrency.orElseThrow(() -> new RuntimeException("No baseCurrency found"));
-        Currency targetCurrency = optionalTargetCurrency
-                .orElseThrow(() -> new RuntimeException("No targetCurrency found"));
-
+        List<Currency> currencies = CurrencyUtils
+                .getValidateCurrencies(baseCurrencyCode, targetCurrencyCode, currencyDao);
+        Currency baseCurrency = currencies.get(0);
+        Currency targetCurrency = currencies.get(1);
         long baseCurrencyId = baseCurrency.getId();
         long targetCurrencyId = targetCurrency.getId();
 
         Optional<ExchangeRate> optionalRate = rateDao.findByPairId(baseCurrencyId, targetCurrencyId);
-        ExchangeRate rate = optionalRate.orElseThrow(() -> new RuntimeException("No exchangeRate found"));
-        return rate;
+        return optionalRate.orElseThrow(() -> new RuntimeException("No exchangeRate found"));
     }
 
     public ExchangeRateDto getByCodePair(String pair) {
@@ -56,8 +53,17 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
         return rateMapper.toDto(exchangeRate);
     }
 
-    public ExchangeRateDto add(ExchangeRateDto rateDto) {
-        ExchangeRate rateToAdd = rateMapper.toRate(rateDto);
+    public ExchangeRateDto add(String baseCurrencyCode, String targetCurrencyCode, BigDecimal rate) {
+        List<Currency> currencies = CurrencyUtils
+                .getValidateCurrencies(baseCurrencyCode, targetCurrencyCode, currencyDao);
+        Currency baseCurrency = currencies.get(0);
+        Currency targetCurrency = currencies.get(1);
+
+        ExchangeRate rateToAdd = new ExchangeRate();
+        rateToAdd.setBaseCurrencyId(baseCurrency.getId());
+        rateToAdd.setTargetCurrencyId(targetCurrency.getId());
+        rateToAdd.setRate(rate);
+
         Optional<ExchangeRate> optionalRate = rateDao.save(rateToAdd);
         rateToAdd = optionalRate.orElseThrow(() -> new RuntimeException("No rate added"));
         return rateMapper.toDto(rateToAdd);
@@ -77,15 +83,12 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
         ExchangeRateMapper mapper = new ExchangeRateMapper();
         ExchangeRateServiceImpl service = new ExchangeRateServiceImpl(rateDao, currencyDao, mapper);
 
-        ExchangeRateDto rateDto = new ExchangeRateDto();
-        rateDto.setBaseCurrencyId(1);
-        rateDto.setTargetCurrencyId(2);
-        rateDto.setRate(BigDecimal.valueOf(2));
-//        service.add(rateDto);
+        //String baseCurrencyCode, String targetCurrencyCode, BigDecimal rate
+        service.add("usd", "rub", BigDecimal.valueOf(86.57));
 
 
-//        service.update("usdeur", BigDecimal.valueOf(4));
-        System.out.println(service.updateByPair("usdeur", BigDecimal.valueOf(4)));
+//        service.updateByPair("usdeur", BigDecimal.valueOf(3));
+//        System.out.println(service.updateByPair("usdeur", BigDecimal.valueOf(0.92)));
 
         List<ExchangeRateDto> rates = service.getAllRates();
         System.out.println(rates);
