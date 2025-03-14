@@ -31,12 +31,25 @@ public class CurrencyDaoImpl implements CurrencyDao {
         return Optional.ofNullable(currencies);
     }
 
-    public Optional<Currency> findByCode(String code) {
-        Currency currency = null;
-        String sql = "SELECT * FROM currencies WHERE code = ?";
+    public Optional<Currency> findById(long id) {
+        String sql = "SELECT * FROM currencies WHERE id = ?";
+        return findCurrency(sql, id);
+    }
 
+    public Optional<Currency> findByCode(String code) {
+        String sql = "SELECT * FROM currencies WHERE code = ?";
+        return findCurrency(sql, code);
+    }
+
+    private Optional<Currency> findCurrency(String sql, Object param) {
+        Currency currency = null;
         try (Connection conn = DataBaseUtils.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, code.toUpperCase());
+            if (param instanceof Long) {
+                stmt.setLong(1, (Long) param);
+            } else if (param instanceof String) {
+                stmt.setString(1, (String) param);
+            }
+
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     currency = new Currency();
@@ -49,6 +62,7 @@ public class CurrencyDaoImpl implements CurrencyDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return Optional.ofNullable(currency);
     }
 

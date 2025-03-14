@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface CurrencyDao {
     public Optional<List<Currency>> findAll();
 
+    Optional<Currency> findById(long id);
+
     public Optional<Currency> findByCode(String code);
 
     public Optional<Currency> save(Currency currency);

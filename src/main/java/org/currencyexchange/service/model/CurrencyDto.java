@@ -1,5 +1,7 @@
 package org.currencyexchange.service.model;
 
+import org.currencyexchange.database.entity.Currency;
+
 import java.util.Objects;
 
 public class CurrencyDto {
@@ -16,6 +18,13 @@ public class CurrencyDto {
         this.code = code;
         this.fullName = fullName;
         this.sign = sign;
+    }
+
+    public CurrencyDto(Currency currency) {
+        this.id = currency.getId();
+        this.code = currency.getCode();
+        this.fullName = currency.getFullName();
+        this.sign = currency.getSign();
     }
 
     public long getId() {

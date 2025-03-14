@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e8635d-399a-41a4-a08e-1e1ddc19f46a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyExchangeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeResultDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateReserveMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateReserveDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/DataBaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/DataBaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/CurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/CurrencyDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/ExchangeRateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/ExchangeRateDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/ExchangeRateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/ExchangeRateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/CurrencyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/CurrencyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mydb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeResultDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyExchangeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +246,14 @@
       <workItem from="1741747357879" duration="414000" />
       <workItem from="1741749574988" duration="1504000" />
       <workItem from="1741753609824" duration="3850000" />
-      <workItem from="1741769560696" duration="9612000" />
+      <workItem from="1741769560696" duration="10619000" />
+      <workItem from="1741788345040" duration="1852000" />
+      <workItem from="1741846875614" duration="3023000" />
+      <workItem from="1741856800335" duration="7121000" />
+      <workItem from="1741873266286" duration="305000" />
+      <workItem from="1741876269081" duration="1708000" />
+      <workItem from="1741927863397" duration="5012000" />
+      <workItem from="1741939690635" duration="7318000" />
     </task>
     <servers />
   </component>
@@ -270,8 +276,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java</url>
-          <line>40</line>
+          <line>38</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

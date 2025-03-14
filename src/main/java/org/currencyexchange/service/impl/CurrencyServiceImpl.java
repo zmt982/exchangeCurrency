@@ -26,8 +26,8 @@ public class CurrencyServiceImpl implements CurrencyService {
     }
 
     public CurrencyDto getCurrencyByCode(String code) {
-        Optional<Currency> optionalCurrencyToFind = currencyDao.findByCode(code.toUpperCase());
-        Currency currency = optionalCurrencyToFind.orElseThrow(() -> new RuntimeException("No currency found"));
+        Currency currency = currencyDao.findByCode(code.toUpperCase())
+                .orElseThrow(() -> new RuntimeException("No currency found"));
         return currencyMapper.toDto(currency);
     }
 
@@ -36,8 +36,8 @@ public class CurrencyServiceImpl implements CurrencyService {
         currencyToAdd.setCode(code.toUpperCase());
         currencyToAdd.setFullName(name);
         currencyToAdd.setSign(sign);
-        Optional<Currency> optionalCurrency = currencyDao.save(currencyToAdd);
-        currencyToAdd = optionalCurrency.orElseThrow(() -> new RuntimeException("No currency added"));
+        currencyToAdd = currencyDao.save(currencyToAdd)
+                .orElseThrow(() -> new RuntimeException("No currency added"));
         return currencyMapper.toDto(currencyToAdd);
     }
 
@@ -47,7 +47,11 @@ public class CurrencyServiceImpl implements CurrencyService {
         CurrencyServiceImpl service = new CurrencyServiceImpl(dao, mapper);
 
         List<CurrencyDto> list = service.getAllCurrencies();
-        System.out.println(service.getCurrencyByCode("eUr"));
+        Currency curr = dao.findById(3).orElseThrow(() -> new RuntimeException("No test currency found"));
+        System.out.println(curr);
+        System.out.println(service.getCurrencyByCode("uSd"));
+        System.out.println(service.getCurrencyByCode("euR"));
+        System.out.println(service.getCurrencyByCode("RUb"));
         System.out.println(list);
     }
 }

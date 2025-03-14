@@ -6,11 +6,9 @@ import org.currencyexchange.database.repository.CurrencyDao;
 import org.currencyexchange.database.repository.ExchangeRateDao;
 import org.currencyexchange.database.repository.impl.CurrencyDaoImpl;
 import org.currencyexchange.database.repository.impl.ExchangeRateDaoImpl;
-import org.currencyexchange.service.CurrencyService;
 import org.currencyexchange.service.CurrencyExchangeService;
 import org.currencyexchange.service.mapper.CurrencyMapper;
-import org.currencyexchange.service.model.CurrencyDto;
-import org.currencyexchange.service.model.ExchangeResultDto;
+import org.currencyexchange.service.model.CurrencyExchangeDto;
 import org.currencyexchange.util.CurrencyUtils;
 
 import java.math.BigDecimal;
@@ -32,9 +30,9 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
     }
 
     @Override
-    public ExchangeResultDto exchange(String baseCurrencyCode, String targetCurrencyCode, BigDecimal amount) {
+    public CurrencyExchangeDto exchange(String baseCurrencyCode, String targetCurrencyCode, BigDecimal amount) {
         List<Currency> currencies = CurrencyUtils
-                .getValidateCurrencies(baseCurrencyCode, targetCurrencyCode, currencyDao);
+                .getCurrencies(baseCurrencyCode, targetCurrencyCode, currencyDao);
 
         Currency baseCurrency = currencies.get(0);
         Currency targetCurrency = currencies.get(1);
@@ -42,7 +40,7 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
 
         BigDecimal convertedAmount = rate.multiply(amount).setScale(2, RoundingMode.HALF_UP);
 
-        ExchangeResultDto result = new ExchangeResultDto();
+        CurrencyExchangeDto result = new CurrencyExchangeDto();
         result.setBaseCurrency(currencyMapper.toDto(baseCurrency));
         result.setTargetCurrency(currencyMapper.toDto(targetCurrency));
         result.setRate(rate);
@@ -62,11 +60,11 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
             return BigDecimal.ONE.divide(reverseRate.get().getRate(), 6, RoundingMode.HALF_UP);
         }
 
-        Optional<Currency> optionalUsd = currencyDao.findByCode(USD_CURRENCY_CODE);
-        Currency usd = optionalUsd.orElseThrow(() -> new RuntimeException("USD currency not found"));
+        Currency usd = currencyDao.findByCode(USD_CURRENCY_CODE)
+                .orElseThrow(() -> new RuntimeException("USD currency not found"));
         Optional<ExchangeRate> usdToBase = exchangeRateDao.findByPairId(usd.getId(), baseCurrency.getId());
         Optional<ExchangeRate> usdToTarget = exchangeRateDao.findByPairId(usd.getId(), targetCurrency.getId());
-        if (usdToBase.isPresent() && usdToTarget.isPresent()) {
+        if (usdToBase.get().getRate() != null && usdToTarget.get().getRate() != null) {
             return usdToTarget.get().getRate().divide(usdToBase.get().getRate(), 6, RoundingMode.HALF_UP);
         }
         throw new RuntimeException("Exchange rate not found for pair: " + baseCurrency.getCode() +
@@ -79,17 +77,25 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
         ExchangeRateDao rateDao = new ExchangeRateDaoImpl();
         CurrencyExchangeService currencyExchangeService = new CurrencyExchangeServiceImpl(currencyDao, currencyMapper, rateDao);
 
-        String usd = "Usq";
-        String eur = "eUq";
-        String rub = "ruq";
+        String usd = "Usd";
+        String eur = "eUr";
+        String rub = "ruB";
 
         //String baseCurrencyCode, String targetCurrencyCode, BigDecimal amount
-        ExchangeResultDto exchange = currencyExchangeService.exchange(usd, eur, BigDecimal.valueOf(2));
-        ExchangeResultDto exchange2 = currencyExchangeService.exchange(eur, usd, BigDecimal.valueOf(2));
-        ExchangeResultDto exchange3 = currencyExchangeService.exchange(eur, rub, BigDecimal.valueOf(2));
+        CurrencyExchangeDto exchange = currencyExchangeService.exchange(usd, eur, BigDecimal.valueOf(2));
+        CurrencyExchangeDto exchange2 = currencyExchangeService.exchange(eur, usd, BigDecimal.valueOf(2));
+
+        CurrencyExchangeDto exchange3 = currencyExchangeService.exchange(eur, rub, BigDecimal.valueOf(2));
+        CurrencyExchangeDto exchange4 = currencyExchangeService.exchange(rub, eur, BigDecimal.valueOf(2));
+
+        CurrencyExchangeDto exchange5 = currencyExchangeService.exchange(usd, rub, BigDecimal.valueOf(2));
+        CurrencyExchangeDto exchange6 = currencyExchangeService.exchange(rub, usd, BigDecimal.valueOf(2));
 
         System.out.println(exchange);
         System.out.println(exchange2);
         System.out.println(exchange3);
+        System.out.println(exchange4);
+        System.out.println(exchange5);
+        System.out.println(exchange6);
     }
 }

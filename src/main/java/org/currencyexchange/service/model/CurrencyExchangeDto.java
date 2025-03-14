@@ -2,18 +2,18 @@ package org.currencyexchange.service.model;
 
 import java.math.BigDecimal;
 
-public class ExchangeResultDto {
+public class CurrencyExchangeDto {
     private CurrencyDto baseCurrency;
     private CurrencyDto targetCurrency;
     private BigDecimal rate;
     private BigDecimal amount;
     private BigDecimal convertedAmount;
 
-    public ExchangeResultDto() {
+    public CurrencyExchangeDto() {
     }
 
-    public ExchangeResultDto(CurrencyDto baseCurrency, CurrencyDto targetCurrency, BigDecimal rate, BigDecimal amount,
-                             BigDecimal convertedAmount) {
+    public CurrencyExchangeDto(CurrencyDto baseCurrency, CurrencyDto targetCurrency, BigDecimal rate, BigDecimal amount,
+                               BigDecimal convertedAmount) {
         this.baseCurrency = baseCurrency;
         this.targetCurrency = targetCurrency;
         this.rate = rate;

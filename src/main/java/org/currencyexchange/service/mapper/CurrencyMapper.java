@@ -13,13 +13,7 @@ public class CurrencyMapper {
             return null;
         }
 
-        final CurrencyDto currencyDto = new CurrencyDto();
-        currencyDto.setId(currency.getId());
-        currencyDto.setCode(currency.getCode());
-        currencyDto.setFullName(currency.getFullName());
-        currencyDto.setSign(currency.getSign());
-
-        return currencyDto;
+        return new CurrencyDto(currency);
     }
 
     public Currency toCurrency(CurrencyDto currencyDto) {
