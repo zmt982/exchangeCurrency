@@ -1,25 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="webExchange" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e8635d-399a-41a4-a08e-1e1ddc19f46a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateReserveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateReserveDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/currencyExchange_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webExchange.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/HttpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/mydb.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/CurrencyServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/ExchangeRateServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/Currency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/ExchangeRate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/CurrencyDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/ExchangeRateDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/ExchangeRateDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyExchangeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/ExchangeRateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/ExchangeRateServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/CurrencyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateReserveMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyExchangeDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateReserveDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/CurrencyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/DataBaseUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/lib/gson-2.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyExchangeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.6.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/78f7c257-af7a-49ed-9577-b2da2bc62ffb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/78f7c257-af7a-49ed-9577-b2da2bc62ffb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/CurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/CurrencyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/CurrencyExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HttpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/CurrencyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/CurrencyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/mapper/ExchangeRateMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeRateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/ExchangeResultDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/model/CurrencyExchangeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +120,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2tQnA76C5K6jBF1ZV4JnFMH2ZuM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,15 +147,17 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/workspace/currencyExchange/src/main/java/currency&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/databases/mydb.db&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/currencyExchange&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.3045977&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -78,11 +173,18 @@
       <recent name="currency" />
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\currencyExchange\web" />
+      <recent name="C:\workspace\currencyExchange\src" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="currency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CurrencyExchangeServiceImpl">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.5">
     <configuration name="CurrencyExchangeServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.currencyexchange.service.impl.CurrencyExchangeServiceImpl" />
       <module name="currencyExchange" />
@@ -120,6 +222,96 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 11.0.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/currencyExchange" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="webExchange">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="c5ae8e3a-1878-438f-8328-fbbd1307d03f" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3328" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="webExchange" />
+        </option>
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
@@ -200,6 +392,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CurrencyExchangeServiceImpl" />
+      <item itemvalue="Application.org.currencyexchange.service.impl.CurrencyServiceImpl" />
+      <item itemvalue="Application.org.currencyexchange.service.impl.ExchangeRateServiceImpl" />
+      <item itemvalue="Tomcat Server.Tomcat 11.0.5" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.82" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CurrencyExchangeServiceImpl" />
@@ -253,7 +452,30 @@
       <workItem from="1741873266286" duration="305000" />
       <workItem from="1741876269081" duration="1708000" />
       <workItem from="1741927863397" duration="5012000" />
-      <workItem from="1741939690635" duration="7318000" />
+      <workItem from="1741939690635" duration="7993000" />
+      <workItem from="1741962045065" duration="2312000" />
+      <workItem from="1741964393906" duration="16000" />
+      <workItem from="1741964489255" duration="1838000" />
+      <workItem from="1741966377557" duration="130000" />
+      <workItem from="1741972278717" duration="3593000" />
+      <workItem from="1742012089216" duration="42000" />
+      <workItem from="1742012371853" duration="1171000" />
+      <workItem from="1742013587646" duration="1074000" />
+      <workItem from="1742015093840" duration="1828000" />
+      <workItem from="1742017417476" duration="4639000" />
+      <workItem from="1742029776751" duration="486000" />
+      <workItem from="1742030394105" duration="150000" />
+      <workItem from="1742032469418" duration="2261000" />
+      <workItem from="1742117806417" duration="1878000" />
+      <workItem from="1742123415421" duration="514000" />
+      <workItem from="1742225829268" duration="5678000" />
+      <workItem from="1743244485595" duration="331000" />
+      <workItem from="1743245566676" duration="3492000" />
+      <workItem from="1743252270007" duration="3930000" />
+      <workItem from="1743350279911" duration="6945000" />
+      <workItem from="1743443543971" duration="85000" />
+      <workItem from="1743443861174" duration="607000" />
+      <workItem from="1743444487291" duration="201000" />
     </task>
     <servers />
   </component>
@@ -272,24 +494,14 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/ExchangeRateServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="dao" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

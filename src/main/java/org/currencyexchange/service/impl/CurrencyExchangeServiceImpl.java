@@ -75,7 +75,8 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
         CurrencyDao currencyDao = new CurrencyDaoImpl();
         CurrencyMapper currencyMapper = new CurrencyMapper();
         ExchangeRateDao rateDao = new ExchangeRateDaoImpl();
-        CurrencyExchangeService currencyExchangeService = new CurrencyExchangeServiceImpl(currencyDao, currencyMapper, rateDao);
+        CurrencyExchangeService currencyExchangeService = new CurrencyExchangeServiceImpl(
+                currencyDao, currencyMapper, rateDao);
 
         String usd = "Usd";
         String eur = "eUr";
