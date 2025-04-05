@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="webExchange">
-    <output-path>$PROJECT_DIR$</output-path>
-    <root id="archive" name="webExchange.war" />
-  </artifact>
-</component>

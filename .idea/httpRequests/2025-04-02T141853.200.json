@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "code": "USD",
+    "fullName": "United States dollar",
+    "sign": "$"
+  },
+  {
+    "id": 2,
+    "code": "EUR",
+    "fullName": "Euro",
+    "sign": "€"
+  },
+  {
+    "id": 3,
+    "code": "RUB",
+    "fullName": "Russian Ruble",
+    "sign": "?"
+  },
+  {
+    "id": 4,
+    "code": "F",
+    "fullName": "s",
+    "sign": "es"
+  }
+]

@@ -1,0 +1,5 @@
+###
+http://localhost:8081/currencyExchange/currencies
+
+###
+http://localhost:8081/currencyExchange/exchange?from=USD&to=EUR&amount=10

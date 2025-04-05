@@ -1,0 +1,17 @@
+{
+  "baseCurrency": {
+    "id": 1,
+    "code": "USD",
+    "fullName": "United States dollar",
+    "sign": "$"
+  },
+  "targetCurrency": {
+    "id": 2,
+    "code": "EUR",
+    "fullName": "Euro",
+    "sign": "€"
+  },
+  "rate": 0.92,
+  "amount": 10,
+  "convertedAmount": 9.20
+}

@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class Currency {
     private long id;
-    private String code; // код валюты
-    private String fullName; // полное имя валюты
-    private String sign; // символ валюты
+    private String code;
+    private String fullName;
+    private String sign;
 
     public Currency() {
     }

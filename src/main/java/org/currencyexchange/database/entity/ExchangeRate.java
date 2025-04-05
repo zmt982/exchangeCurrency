@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public class ExchangeRate {
     private long id;
-    private long baseCurrencyId; // ID базовой валюты, внешний ключ на Currencies.ID
-    private long targetCurrencyId; // ID целевой валюты, внешний ключ на Currencies.ID
-    private BigDecimal rate; // Курс обмена единицы базовой валюты к единице целевой валюты
+    private long baseCurrencyId;
+    private long targetCurrencyId;
+    private BigDecimal rate;
 
     public ExchangeRate() {
     }

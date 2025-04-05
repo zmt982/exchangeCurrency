@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
-@WebServlet("/exchange-rates")
+@WebServlet("/exchangeRate")
 public class ExchangeRateController extends HttpServlet {
     private final ExchangeRateService exchangeRateService =
             new ExchangeRateServiceImpl(new ExchangeRateDaoImpl(), new CurrencyDaoImpl(), new ExchangeRateMapper());

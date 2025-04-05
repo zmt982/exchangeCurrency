@@ -1,0 +1,88 @@
+GET http://localhost:8081/currencyExchange/currencies
+
+<> 2025-04-02T141858.200.json
+
+###
+
+GET http://localhost:8081/currencyExchange/currencies
+
+<> 2025-04-02T141853.200.json
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T141834.200.json
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T140838.200.json
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T140827.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T134618.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T134546.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T134508.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=EUR&amount=10
+
+<> 2025-04-02T133432.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges?from=USD&to=AUD&amount=10
+
+<> 2025-04-02T133400.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges
+
+###
+
+GET http://localhost:8081/currencyExchange/currency-exchanges
+
+<> 2025-04-02T132439.500.html
+
+###
+
+GET http://localhost:8081/currencyExchange/currencies
+
+<> 2025-04-02T132315.200.json
+
+###
+

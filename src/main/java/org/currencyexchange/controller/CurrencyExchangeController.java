@@ -15,7 +15,7 @@ import org.currencyexchange.service.model.CurrencyExchangeDto;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-@WebServlet("/currency-exchanges")
+@WebServlet("/exchange")
 public class CurrencyExchangeController extends HttpServlet {
     private final CurrencyExchangeService currencyExchangeService =
             new CurrencyExchangeServiceImpl(new CurrencyDaoImpl(), new CurrencyMapper(), new ExchangeRateDaoImpl());
@@ -25,8 +25,8 @@ public class CurrencyExchangeController extends HttpServlet {
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
 
-        String baseCurrency = req.getParameter("baseCurrency");
-        String targetCurrency = req.getParameter("targetCurrency");
+        String baseCurrency = req.getParameter("from");
+        String targetCurrency = req.getParameter("to");
         String amountString = req.getParameter("amount");
         BigDecimal amount = new BigDecimal(amountString);
 

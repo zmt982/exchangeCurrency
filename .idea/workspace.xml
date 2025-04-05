@@ -10,99 +10,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e8635d-399a-41a4-a08e-1e1ddc19f46a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/currencyExchange_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webExchange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/HttpService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/mydb.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/CurrencyServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/ExchangeRateServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/Currency.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/ExchangeRate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/CurrencyDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/ExchangeRateDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/ExchangeRateDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyExchangeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/ExchangeRateService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/ExchangeRateServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/CurrencyMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateReserveMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyExchangeDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateReserveDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/CurrencyUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/DataBaseUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/lib/gson-2.12.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyExchangeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.6.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/78f7c257-af7a-49ed-9577-b2da2bc62ffb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/78f7c257-af7a-49ed-9577-b2da2bc62ffb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/APIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/TestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/currencyExchange_Web_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webExchange.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/HttpService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/mydb.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/CurrencyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/ExchangeRateServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/controller/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/Currency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/entity/ExchangeRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/CurrencyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/ExchangeRateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/database/repository/impl/ExchangeRateDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyExchangeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/CurrencyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/ExchangeRateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/CurrencyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/impl/ExchangeRateServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/CurrencyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/mapper/ExchangeRateReserveMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/CurrencyExchangeDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/service/model/ExchangeRateReserveDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/CurrencyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/classes/org/currencyexchange/util/DataBaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/lib/gson-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/currencyExchange_Web_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HttpService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/service/impl/CurrencyExchangeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyExchangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyExchangeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/ExchangeRateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/entity/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/entity/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/entity/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/database/entity/ExchangeRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/DataBaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/currencyexchange/util/DataBaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mydb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery-3.6.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.6.3.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +114,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +131,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -147,17 +156,17 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/workspace/currencyExchange/src/main/java/currency&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace/currencyExchange&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/currencyExchange/target/currencyExchange.war&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3045977&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.214&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -174,6 +183,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\currencyExchange\src\main" />
       <recent name="C:\workspace\currencyExchange\web" />
       <recent name="C:\workspace\currencyExchange\src" />
     </key>
@@ -198,19 +208,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.currencyexchange.service.impl.CurrencyServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.currencyexchange.service.impl.CurrencyServiceImpl" />
-      <module name="currencyExchange" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.currencyexchange.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="org.currencyexchange.service.impl.ExchangeRateServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.currencyexchange.service.impl.ExchangeRateServiceImpl" />
       <module name="currencyExchange" />
@@ -224,16 +221,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 11.0.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+    <configuration name="http | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/http.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="http | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/http.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="http | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/http.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 11.0.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/currencyExchange" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="webExchange">
+        <file path="$PROJECT_DIR$/target/currencyExchange.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/currencyExchange" />
           </settings>
-        </artifact>
+        </file>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="c5ae8e3a-1878-438f-8328-fbbd1307d03f" />
@@ -309,9 +315,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="webExchange" />
-        </option>
+        <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
@@ -392,18 +396,99 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ab614696-409d-4701-a3f5-26a3951776ad" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53388" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CurrencyExchangeServiceImpl" />
-      <item itemvalue="Application.org.currencyexchange.service.impl.CurrencyServiceImpl" />
       <item itemvalue="Application.org.currencyexchange.service.impl.ExchangeRateServiceImpl" />
+      <item itemvalue="HTTP Request.http | #1" />
+      <item itemvalue="HTTP Request.http | #2" />
+      <item itemvalue="HTTP Request.http | #3" />
       <item itemvalue="Tomcat Server.Tomcat 11.0.5" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.82" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.http | #1" />
+        <item itemvalue="HTTP Request.http | #3" />
+        <item itemvalue="HTTP Request.http | #2" />
         <item itemvalue="Application.CurrencyExchangeServiceImpl" />
         <item itemvalue="Application.org.currencyexchange.service.impl.ExchangeRateServiceImpl" />
-        <item itemvalue="Application.org.currencyexchange.service.impl.CurrencyServiceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -476,6 +561,14 @@
       <workItem from="1743443543971" duration="85000" />
       <workItem from="1743443861174" duration="607000" />
       <workItem from="1743444487291" duration="201000" />
+      <workItem from="1743471030797" duration="570000" />
+      <workItem from="1743498116753" duration="2578000" />
+      <workItem from="1743500753856" duration="7094000" />
+      <workItem from="1743561422849" duration="2439000" />
+      <workItem from="1743563989816" duration="4934000" />
+      <workItem from="1743574025125" duration="9180000" />
+      <workItem from="1743697258272" duration="2204000" />
+      <workItem from="1743729009184" duration="1855000" />
     </task>
     <servers />
   </component>
@@ -494,6 +587,25 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/controller/CurrencyExchangeController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/util/CurrencyUtils.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/currencyexchange/database/repository/impl/CurrencyDaoImpl.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="dao" />
