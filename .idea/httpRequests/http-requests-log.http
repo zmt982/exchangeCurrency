@@ -1,5 +1,17 @@
 GET http://localhost:8081/currencyExchange/currencies
 
+###
+
+GET http://localhost:8081/currencyExchange/exchange?from=USD&to=EUR&amount=10
+
+###
+
+GET http://localhost:8081/currencyExchange/exchange?from=USD&to=EUR&amount=10
+
+###
+
+GET http://localhost:8081/currencyExchange/currencies
+
 <> 2025-04-02T141858.200.json
 
 ###
