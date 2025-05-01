@@ -51,24 +51,38 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
 
     private BigDecimal getExchangeRate(Currency baseCurrency, Currency targetCurrency) {
         Optional<ExchangeRate> directRate = exchangeRateDao.findByPairId(baseCurrency.getId(), targetCurrency.getId());
-        if (directRate.get().getRate() != null) {
+        if (directRate.isPresent() && directRate.get().getRate() != null) {
             return directRate.get().getRate();
         }
 
         Optional<ExchangeRate> reverseRate = exchangeRateDao.findByPairId(targetCurrency.getId(), baseCurrency.getId());
-        if (reverseRate.get().getRate() != null) {
-            return BigDecimal.ONE.divide(reverseRate.get().getRate(), 6, RoundingMode.HALF_UP);
+        if (reverseRate.isPresent() && reverseRate.get().getRate() != null) {
+            return BigDecimal.ONE.divide(
+                    reverseRate.get().getRate(),
+                    6,
+                    RoundingMode.HALF_UP
+            );
         }
 
         Currency usd = currencyDao.findByCode(USD_CURRENCY_CODE)
                 .orElseThrow(() -> new RuntimeException("USD currency not found"));
-        Optional<ExchangeRate> usdToBase = exchangeRateDao.findByPairId(usd.getId(), baseCurrency.getId());
-        Optional<ExchangeRate> usdToTarget = exchangeRateDao.findByPairId(usd.getId(), targetCurrency.getId());
-        if (usdToBase.get().getRate() != null && usdToTarget.get().getRate() != null) {
-            return usdToTarget.get().getRate().divide(usdToBase.get().getRate(), 6, RoundingMode.HALF_UP);
+        Optional<ExchangeRate> baseToUsd = exchangeRateDao.findByPairId(usd.getId(), baseCurrency.getId());
+        Optional<ExchangeRate> targetToUsd = exchangeRateDao.findByPairId(usd.getId(), targetCurrency.getId());
+        if (baseToUsd.isPresent() && baseToUsd.get().getRate() != null &&
+                targetToUsd.isPresent() && targetToUsd.get().getRate() != null) {
+            return targetToUsd.get().getRate().divide(
+                    baseToUsd.get().getRate(),
+                    6,
+                    RoundingMode.HALF_UP
+            );
         }
-        throw new RuntimeException("Exchange rate not found for pair: " + baseCurrency.getCode() +
-                targetCurrency.getCode());
+        throw new RuntimeException(
+                String.format(
+                        "Exchange rate not found for pair: %s-%s",
+                        baseCurrency.getCode(),
+                        targetCurrency.getCode()
+                )
+        );
     }
 
     public static void main(String[] args) {

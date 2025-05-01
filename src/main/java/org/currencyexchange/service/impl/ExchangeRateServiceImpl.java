@@ -106,12 +106,12 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
 
 
 //        service.updateByPair("usdeur", BigDecimal.valueOf(3));
-//        System.out.println(service.updateByPair("usdeur", BigDecimal.valueOf(0.92)));
+        System.out.println(service.updateByPair("usdeur", BigDecimal.valueOf(3)));
 
-        List<ExchangeRateDto> rates = service.getAllRates();
-        System.out.println(rates);
+//        List<ExchangeRateDto> rates = service.getAllRates();
+//        System.out.println(rates);
         System.out.println(service.getByCodePair("usDeUr"));
-        System.out.println(service.getByCodePair("uSdRub"));
-        System.out.println(service.getByCodePair("eurRub"));
+//        System.out.println(service.getByCodePair("uSdRub"));
+//        System.out.println(service.getByCodePair("eurRub"));
     }
 }

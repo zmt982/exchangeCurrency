@@ -16,10 +16,15 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
-@WebServlet("/exchangeRate")
+@WebServlet(urlPatterns = {"/exchangeRates", "/exchangeRate/*"})
 public class ExchangeRateController extends HttpServlet {
     private final ExchangeRateService exchangeRateService =
-            new ExchangeRateServiceImpl(new ExchangeRateDaoImpl(), new CurrencyDaoImpl(), new ExchangeRateMapper());
+            new ExchangeRateServiceImpl(
+                    new ExchangeRateDaoImpl(),
+                    new CurrencyDaoImpl(),
+                    new ExchangeRateMapper()
+            );
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -27,7 +32,6 @@ public class ExchangeRateController extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
 
         String pair = req.getParameter("pair");
-        ObjectMapper objectMapper = new ObjectMapper();
         String jsonResponse;
 
         if (pair != null) {
@@ -49,20 +53,41 @@ public class ExchangeRateController extends HttpServlet {
         BigDecimal rate = new BigDecimal(rateString);
 
         ExchangeRateDto exchangeRateToAdd = exchangeRateService.add(baseCurrencyCode, targetCurrencyCode, rate);
-        String jsonResponse = new ObjectMapper().writeValueAsString(exchangeRateToAdd);
+        String jsonResponse = objectMapper.writeValueAsString(exchangeRateToAdd);
 
         resp.getWriter().write(jsonResponse);
     }
 
     @Override
     protected void doPatch(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String pair = req.getParameter("pair");
+        resp.setContentType("application/json");
+        resp.setCharacterEncoding("UTF-8");
+
+        String pathInfo = req.getPathInfo();
+        if (pathInfo == null || pathInfo.length() < 6) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Currency pair must be specifies in URL");
+            return;
+        }
+
+        String currencyPair = pathInfo.substring(1).toUpperCase();
         String rateString = req.getParameter("rate");
-        BigDecimal rate = new BigDecimal(rateString);
+        if (rateString == null || rateString.isEmpty()) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Rate parameter is required");
+            return;
+        }
 
-        ExchangeRateDto exchangeRateToUpdate = exchangeRateService.updateByPair(pair, rate);
-        String jsonResponse = new ObjectMapper().writeValueAsString(exchangeRateToUpdate);
+        try {
+            BigDecimal rate = new BigDecimal(rateString);
 
-        resp.getWriter().write(jsonResponse);
+            ExchangeRateDto exchangeRateToUpdate = exchangeRateService.updateByPair(currencyPair, rate);
+            resp.setStatus(HttpServletResponse.SC_OK);
+            String jsonResponse = objectMapper.writeValueAsString(exchangeRateToUpdate);
+
+            resp.getWriter().write(jsonResponse);
+        } catch (NumberFormatException e) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid rate format");
+        } catch (RuntimeException e) {
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
+        }
     }
 }

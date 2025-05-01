@@ -19,6 +19,7 @@ import java.math.BigDecimal;
 public class CurrencyExchangeController extends HttpServlet {
     private final CurrencyExchangeService currencyExchangeService =
             new CurrencyExchangeServiceImpl(new CurrencyDaoImpl(), new CurrencyMapper(), new ExchangeRateDaoImpl());
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -31,7 +32,7 @@ public class CurrencyExchangeController extends HttpServlet {
         BigDecimal amount = new BigDecimal(amountString);
 
         CurrencyExchangeDto exchange = currencyExchangeService.exchange(baseCurrency, targetCurrency, amount);
-        String jsonResponse = new ObjectMapper().writeValueAsString(exchange);
+        String jsonResponse = objectMapper.writeValueAsString(exchange);
 
         resp.getWriter().write(jsonResponse);
     }

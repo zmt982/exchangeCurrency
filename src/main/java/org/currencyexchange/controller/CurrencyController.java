@@ -19,6 +19,7 @@ import java.util.List;
 public class CurrencyController extends HttpServlet {
     private final CurrencyService currencyService =
             new CurrencyServiceImpl(new CurrencyDaoImpl(), new CurrencyMapper());
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -26,7 +27,6 @@ public class CurrencyController extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
 
         String code = req.getParameter("code");
-        ObjectMapper objectMapper = new ObjectMapper();
         String jsonResponse;
 
         if (code != null) {
@@ -47,7 +47,7 @@ public class CurrencyController extends HttpServlet {
         String sign = req.getParameter("sign");
 
         CurrencyDto currencyToAdd = currencyService.add(name, code, sign);
-        String jsonResponse = new ObjectMapper().writeValueAsString(currencyToAdd);
+        String jsonResponse = objectMapper.writeValueAsString(currencyToAdd);
 
         resp.getWriter().write(jsonResponse);
     }

@@ -31,22 +31,27 @@ public class ExchangeRateDaoImpl implements ExchangeRateDao {
     }
 
     public Optional<ExchangeRate> findByPairId(long baseCurrencyId, long targetCurrencyId) {
-        ExchangeRate rate = new ExchangeRate();
         String sql = "SELECT * FROM exchange_rates WHERE basecurrency_id = " + baseCurrencyId +
                 " AND targetcurrency_id = " + targetCurrencyId;
 
-        try (Connection conn = DataBaseUtils.getConnection(); Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
-            while (rs.next()) {
-                rate.setId(rs.getLong("id"));
-                rate.setBaseCurrencyId(rs.getLong("basecurrency_id"));
-                rate.setTargetCurrencyId(rs.getLong("targetcurrency_id"));
-                rate.setRate(rs.getBigDecimal("rate"));
+        try (Connection conn = DataBaseUtils.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    ExchangeRate rate = new ExchangeRate(
+                            rs.getLong("id"),
+                            rs.getLong("basecurrency_id"),
+                            rs.getLong("targetcurrency_id"),
+                            rs.getBigDecimal("rate")
+                    );
+                    return Optional.of(rate);
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return Optional.ofNullable(rate);
+        return Optional.empty();
     }
 
     public Optional<ExchangeRate> save(ExchangeRate rate) {
@@ -81,19 +86,21 @@ public class ExchangeRateDaoImpl implements ExchangeRateDao {
 
         try (Connection conn = DataBaseUtils.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
+            conn.setAutoCommit(false);
             stmt.setBigDecimal(1, rateToUpdate.getRate());
             stmt.setLong(2, rateToUpdate.getId());
 
             int affectedRows = stmt.executeUpdate();
-
-            if (affectedRows == 0) {
-                return Optional.empty();
+            if (affectedRows > 0) {
+                conn.commit();
+                return findByPairId(
+                        rateToUpdate.getBaseCurrencyId(),
+                        rateToUpdate.getTargetCurrencyId());
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
-            return Optional.empty();
         }
-        return Optional.of(rateToUpdate);
+        return Optional.empty();
     }
 }
